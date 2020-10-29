@@ -8,6 +8,10 @@ app.use(express.static("public"));
 
 let items = ["Cumpar mancare", "Gatesc mancare", "Mananc"];
 let workItems = [];
+
+app.get("/To-Do-List", function (req, res) {
+  res.redirect("/");
+});
 app.get("/", function (req, res) {
   let today = new Date();
   let options = {
