@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 html {
   background-color: #dddddd;
   background-image: -webkit-linear-gradient(65deg, #b80f0a 50%, #e4e9fd 50%);
@@ -92,4 +94,22 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+
+.footer-bar {
+  list-style: none;
+  width: 50%;
+  font-size: 16px;
+  display: inline;
+}
+
+.menu-items {
+  font-family: "Roboto", sans-serif;
+  background-color: #b80f0a;
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }

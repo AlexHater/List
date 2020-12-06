@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>To Do List</title>
-</head>
-<body>
+<%- include("header") -%>
 
     <div class="box" id="heading">
         <h1> <%= listTitle %> </h1>
@@ -21,11 +13,10 @@
               <% } %>
 
               <form action="/" method="post">
-                <input type="text" name="newItem" placeholder="Ce vrei sa faci azi?" autocomplete="off">
+                <input type="text" name="newItem" placeholder="Scrie ceva!" autocomplete="off">
                 <button type="submit" name="list" value=<%= listTitle %>>+</button>
 
             </form>
     </div>
 
-</body>
-</html>
+    <%- include("footer") -%>
