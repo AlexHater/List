@@ -15,7 +15,7 @@ app.get("/To-Do-List", function (req, res) {
   res.redirect("/");
 });
 
-app.get("/list", function (req, res) {
+app.get("/List", function (req, res) {
   let day = date.getDate();
 
   res.render("list", {
